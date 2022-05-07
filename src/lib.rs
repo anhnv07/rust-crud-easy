@@ -101,7 +101,6 @@ mod tests {
         let context = get_context(vec![], true);
         testing_env!(context);
         let contract = KeyValue::default();
-        // contract.read("bob_near".to_string());
         assert_eq!(
             None,
             contract.read("bob_near".to_string())
@@ -115,5 +114,4 @@ mod tests {
         let mut contract = KeyValue::default();
         contract.delete("bob_near".to_string());
     }
-
 }
