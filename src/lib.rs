@@ -87,7 +87,6 @@ mod tests {
         }
     }
 
-    // Test 1
     #[test]
     fn test_create_update_job() {
         let context = get_context(vec![], false);
